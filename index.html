@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharathkumar Palthur – Infrastructure Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>BP<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#awards" class="nav-link">Awards</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="terminal-prompt">root@cloud:~$</span> 
+        <span class="terminal-cursor"></span>
+      </p>
+      <h1 class="hero-name">Bharathkumar<br><span class="accent-name">Palthur</span></h1>
+      <div class="hero-role">
+        <span class="role-prefix">// </span>
+        <span id="typed-role"></span>
+        <span class="type-cursor">|</span>
+      </div>
+      <p class="hero-tagline">Orchestrating cloud infrastructure at scale — 6000+ servers, zero downtime.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="2">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Years Exp</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6000">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Servers Managed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">SLA Maintained</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">
+          <i class="fas fa-server"></i> View Experience
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-terminal"></i> Contact Me
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-system">
+        <div class="orbit-core">
+          <i class="fab fa-aws core-icon"></i>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-planet p1"><i class="fab fa-linux"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-planet p2"><i class="fas fa-cloud"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-planet p3"><i class="fas fa-shield-alt"></i></div>
+        </div>
+        <div class="orbit orbit-4">
+          <div class="orbit-planet p4"><i class="fas fa-network-wired"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">01 // ABOUT</span>
+      <h2 class="section-title">Who Am I?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass" data-aos="fade-right" data-aos-delay="100">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">BP</span>
+            </div>
+          </div>
+          <div class="avatar-status">
+            <span class="status-dot"></span> Available for Opportunities
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-row"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</div>
+          <div class="detail-row"><i class="fas fa-briefcase"></i> Infra Managed Service Analyst</div>
+          <div class="detail-row"><i class="fas fa-building"></i> Accenture</div>
+          <div class="detail-row"><i class="fas fa-graduation-cap"></i> BCA – CGPA 8.35</div>
+          <div class="detail-row"><i class="fas fa-award"></i> AZ-900 Certified</div>
+        </div>
+      </div>
+      <div class="about-text-block" data-aos="fade-left" data-aos-delay="200">
+        <p class="about-bio">
+          I'm an <strong>Infrastructure Analyst</strong> specializing in cloud-scale Linux and AWS operations. 
+          With hands-on experience managing enterprise environments at Accenture, I maintain critical infrastructure 
+          for SAP cloud workloads across multiple AWS regions — ensuring high availability and 100% SLA compliance.
+        </p>
+        <p class="about-bio">
+          My work spans automated patching, SSL lifecycle management, storage orchestration (EFS/EBS), 
+          Lambda deployments, and real-time monitoring. I thrive in complex, high-stakes environments 
+          where uptime is non-negotiable.
+        </p>
+        <div class="about-tags">
+          <span class="tag">AWS Cloud</span>
+          <span class="tag">Linux Admin</span>
+          <span class="tag">SAP Runtime</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Production Support</span>
+          <span class="tag">Infrastructure at Scale</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">02 // SKILLS</span>
+      <h2 class="section-title">Tech Arsenal</h2>
+    </div>
+    <div class="skills-wrapper">
+      <div class="skills-bars-col" data-aos="fade-right" data-aos-delay="100">
+        <h3 class="skills-subtitle">Core Proficiencies</h3>
+        <div id="skill-bars-container"></div>
+      </div>
+      <div class="skills-icons-col" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="skills-subtitle">Tools & Technologies</h3>
+        <div id="skill-icons-container" class="skill-icons-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────── -->
+  <section id="experience">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">03 // EXPERIENCE</span>
+      <h2 class="section-title">Work History</h2>
+    </div>
+    <div class="timeline" id="timeline-container">
+      <!-- JS-rendered -->
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ────────────────────────────────── -->
+  <section id="certifications">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">04 // CERTIFICATIONS</span>
+      <h2 class="section-title">Credentials</h2>
+    </div>
+    <div class="certs-grid" id="certs-container">
+      <!-- JS-rendered -->
+    </div>
+  </section>
+
+  <!-- ─── AWARDS ────────────────────────────────────────── -->
+  <section id="awards">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">05 // AWARDS</span>
+      <h2 class="section-title">Recognition</h2>
+    </div>
+    <div class="awards-grid" id="awards-container">
+      <!-- JS-rendered -->
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────── -->
+  <section id="contact">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">06 // CONTACT</span>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+        <p class="contact-intro">Open to cloud engineering roles, DevOps opportunities, and infrastructure consulting engagements. Let's connect.</p>
+        <div class="contact-items">
+          <a href="tel:+917349768161" class="contact-item glass">
+            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+            <div><span class="contact-label">Phone</span><span class="contact-value">+91 7349768161</span></div>
+          </a>
+          <a href="mailto:bharatkumarpalthur17@gmail.com" class="contact-item glass">
+            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+            <div><span class="contact-label">Email</span><span class="contact-value">bharatkumarpalthur17@gmail.com</span></div>
+          </a>
+          <div class="contact-item glass">
+            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <div><span class="contact-label">Location</span><span class="contact-value">Bengaluru, Karnataka, India</span></div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form glass" id="contact-form" data-aos="fade-left" data-aos-delay="200" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" autocomplete="off" />
+          <span class="form-error" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" autocomplete="off" />
+          <span class="form-error" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" autocomplete="off" />
+          <span class="form-error" id="subject-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about the role or project..."></textarea>
+          <span class="form-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div id="form-success" class="form-success" style="display:none;">
+          <i class="fas fa-check-circle"></i> Message sent successfully!
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">&lt;</span>BP<span class="logo-bracket">/&gt;</span></span>
+      <p class="footer-copy">© 2026 Bharathkumar Palthur. Built with precision.</p>
+      <div class="footer-links">
+        <a href="mailto:bharatkumarpalthur17@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+917349768161"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
