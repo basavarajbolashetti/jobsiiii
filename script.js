@@ -1,4 +1,3 @@
-
 /* ═══════════════════════════════════════════════════════
    BHARATHKUMAR PALTHUR — PORTFOLIO JS
    ═══════════════════════════════════════════════════════ */
@@ -317,18 +316,45 @@ function setupContactForm() {
     document.getElementById(id).addEventListener('blur', validate);
   });
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     if (!validate()) return;
+
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    setTimeout(() => {
-      submitBtn.style.display = 'none';
-      successMsg.style.display = 'flex';
-      successMsg.style.alignItems = 'center';
-      successMsg.style.gap = '8px';
-      form.reset();
-    }, 1200);
+
+    const data = {
+      name:    document.getElementById('name').value,
+      email:   document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value,
+    };
+
+    try {
+      const res = await fetch('https://formspree.io/f/mdawgkrq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        submitBtn.style.display = 'none';
+        successMsg.style.display = 'flex';
+        successMsg.style.alignItems = 'center';
+        successMsg.style.gap = '8px';
+        successMsg.innerHTML = '<i class="fas fa-check-circle"></i> Message sent! Bharathkumar will get back to you soon.';
+        form.reset();
+      } else {
+        const json = await res.json();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        alert(json?.errors?.[0]?.message || 'Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      alert('Network error. Please check your connection and try again.');
+    }
   });
 }
 
